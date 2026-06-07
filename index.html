@@ -239,7 +239,8 @@ section{padding:90px 0}
 .contact-icon{width:54px;height:54px;background:var(--bg-soft);border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--blue);font-size:24px;margin:0 auto 16px}
 .contact-card h4{font-size:18px;font-weight:700;color:var(--navy);margin-bottom:6px}
 .contact-card p{color:var(--muted);font-size:14px}
-.map-placeholder{margin-top:40px;height:300px;background:linear-gradient(135deg,var(--bg-soft),#dbe5ff);border-radius:20px;display:flex;align-items:center;justify-content:center;color:var(--navy);font-weight:600}
+.map-embed{margin-top:40px;height:380px;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.map-embed iframe{width:100%;height:100%;border:0;display:block}
 
 /* Footer */
 footer{background:var(--navy-dark);color:#a8b5d6;padding:70px 0 30px;margin-top:0}
@@ -400,20 +401,14 @@ footer{background:var(--navy-dark);color:#a8b5d6;padding:70px 0 30px;margin-top:
 <!-- About -->
 <section id="about">
   <div class="container">
-    <div class="reveal">
-      <div class="eyebrow">About National Academy</div>
-      <h2 class="section-title">A focused academic ecosystem built for results.</h2>
-      <p class="section-sub">Our mission is simple — combine disciplined teaching, structured testing and genuine mentorship so every student reaches their full potential.</p>
-    </div>
-    <div class="about-grid">
-      <div class="about-image reveal">🎓</div>
-      <div class="reveal">
-        <div class="about-list">
-          <div><span class="icon">🎯</span><div><strong>Our Mission</strong><span>Empower every student with the knowledge, skills and confidence needed for India's most competitive exams.</span></div></div>
-          <div><span class="icon">👁️</span><div><strong>Our Vision</strong><span>To be the most trusted academy where parents, students and mentors build success together.</span></div></div>
-          <div><span class="icon">📚</span><div><strong>Academic Philosophy</strong><span>Conceptual depth, consistent practice, transparent feedback and individual care for every learner.</span></div></div>
-        </div>
+    <div class="reveal" style="text-align:center;max-width:1000px;margin:0 auto;">
+      <div style="font-size:64px;color:var(--primary);line-height:1;margin-bottom:24px;">&#10077;</div>
+      <h2 class="section-title" style="font-size:clamp(28px,4vw,44px);">"To grow a student, you don't need the best tutor — you need a true mentor who instills discipline and drives growth."</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:48px;">
+        <div style="background:#fff;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,.06);font-style:italic;color:#334155;">"Discipline today. Direction tomorrow. Distinction forever."</div>
+        <div style="background:#fff;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,.06);font-style:italic;color:#334155;">"We don't just prepare students for exams. We prepare them for life."</div>
       </div>
+      <div class="eyebrow" style="margin-top:36px;">— The National Academy Mentorship Philosophy</div>
     </div>
   </div>
 </section>
@@ -472,7 +467,7 @@ footer{background:var(--navy-dark);color:#a8b5d6;padding:70px 0 30px;margin-top:
   <div class="container">
     <div class="reveal">
       <div class="eyebrow">Our Programs</div>
-      <h2 class="section-title">Programs  for entrance success.</h2>
+      <h2 class="section-title">Programs engineered for entrance success.</h2>
       <p class="section-sub">Every program blends conceptual depth, regular testing and personal mentorship.</p>
     </div>
     <div class="courses-grid">
@@ -624,7 +619,7 @@ footer{background:var(--navy-dark);color:#a8b5d6;padding:70px 0 30px;margin-top:
       <div class="topper-card reveal"><div class="topper-avatar">DS</div><h4>Dr. Samishka Mandawdhare</h4><p>NEET UG — Medical Achiever</p><div class="trophy">🏆</div></div>
       <div class="topper-card reveal"><div class="topper-avatar">DA</div><h4>Dr. Abhishek Benvanshi</h4><p>NEET UG — Medical Achiever</p><div class="trophy">🏆</div></div>
       <div class="topper-card reveal"><div class="topper-avatar">DR</div><h4>Dr. Roshan Sangade</h4><p>NEET UG — Medical Achiever</p><div class="trophy">🏆</div></div>
-      <div class="topper-card reveal"><div class="topper-avatar">IR</div><h4>IITian Rahul Das</h4><p>IIT Achiever</p><div class="trophy">🏆</div></div>
+      <div class="topper-card reveal"><div class="topper-avatar">IR</div><h4>IITian Rahul Das</h4><p>JEE Advanced — IIT Achiever</p><div class="trophy">🏆</div></div>
       <div class="topper-card reveal"><div class="topper-avatar">OP</div><h4>Omkar Palve</h4><p>JEE Main — Engineering Achiever</p><div class="trophy">🏆</div></div>
       <div class="topper-card reveal"><div class="topper-avatar">TM</div><h4>Tejaswini Mandawdhare</h4><p>JEE Main — Engineering Achiever</p><div class="trophy">🏆</div></div>
     </div>
@@ -706,7 +701,7 @@ footer{background:var(--navy-dark);color:#a8b5d6;padding:70px 0 30px;margin-top:
   <div class="container">
     <div class="reveal">
       <div class="eyebrow">Contact Us</div>
-      <h2 class="section-title">Visit us. Talk to us. Begin the journey.</h2>
+      <h2 class="section-title">We're here to guide your journey.</h2>
     </div>
     <div class="contact-grid">
       <a href="tel:+919653660248" class="contact-card reveal"><div class="contact-icon">📞</div><h4>Phone</h4><p>+91 96536 60248</p></a>
@@ -714,7 +709,11 @@ footer{background:var(--navy-dark);color:#a8b5d6;padding:70px 0 30px;margin-top:
       <a href="mailto:info@nationalacademy.in" class="contact-card reveal"><div class="contact-icon">✉️</div><h4>Email</h4><p>info@nationalacademy.in</p></a>
       <div class="contact-card reveal"><div class="contact-icon">📍</div><h4>Visit Us</h4><p>2nd Floor, Sahyadri Chambers, near Jan Kalyan Hospital, HM Road, Kalyan (East)</p></div>
     </div>
-  <!--  <div class="map-placeholder reveal">📍 Google Maps location placeholder</div>-->
+    <div class="map-embed reveal">
+      <iframe loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Sahyadri+Chambers+HM+Road+Kalyan+East&output=embed"
+        title="National Academy Location"></iframe>
+    </div>
   </div>
 </section>
 
@@ -749,8 +748,8 @@ footer{background:var(--navy-dark);color:#a8b5d6;padding:70px 0 30px;margin-top:
           <li>📍 2nd Floor, Sahyadri Chambers,<br>near Jan Kalyan Hospital, HM Road,<br>Kalyan (East)</li>
           <li>📞 <a href="tel:+919653660248">+91 96536 60248</a></li>
           <li>✉️ <a href="mailto:info@nationalacademy.in">info@nationalacademy.in</a></li>
-          <li>📷 <a href="https://instagram.com/nationalacademy_" target="_blank" rel="noopener">@national_academy_kalyan</a></li>
-          <li>💬 <a href="https://whatsapp.com/channel/0029VaYuWtFGehEQWGYex31q" target="_blank" rel="noopener">WhatsApp Channel</a></li>
+          <li>📷 <a href="https://instagram.com/national_academy_kalyan" target="_blank" rel="noopener">@national_academy_kalyan</a></li>
+          <li>💬 <a href="https://whatsapp.com/channel/nationalacademy" target="_blank" rel="noopener">WhatsApp Channel</a></li>
         </ul>
       </div>
     </div>
